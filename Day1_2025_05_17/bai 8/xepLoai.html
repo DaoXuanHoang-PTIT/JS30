@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function xepLoai(diem) {
+            if (diem>=9) {
+                return ('Xuat xac');
+
+            }
+            else if (8<= diem <9) {
+                return ('Gioi');
+            }
+            else if (6.5<= diem <8) {
+                return ('Kha');
+            }
+            else if (5<= diem < 6.5) {
+                return ('Trung binh');
+            }
+            else {
+                return ('Yeu');
+            }
+
+        }
+        var diem = parseInt(prompt('nhap diem giua ki cua ban: '));
+        document.write(xepLoai(diem));
+    </script>
+</body>
+</html>

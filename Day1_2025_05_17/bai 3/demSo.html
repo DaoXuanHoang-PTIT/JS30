@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demSochiahet() {
+            var so = 0;
+            for(var i = 1; i<= 100; i++) {
+                if (i%3==0 && i%5==0) {
+                    so += 1;
+                }
+            }
+            return so;
+
+        }
+        document.write('số chữ số chia hết cho cả 3 và 5 từ 1-100 là: ' + demSochiahet());
+    </script>
+</body>
+</html>

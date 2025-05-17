@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tongChuSo(n) {
+            if (n<=0){
+                return ('vui long nhap so nguyen duong')
+            }
+            var sum = 0;
+            while (n > 0) {
+                sum = sum + n % 10
+                n = Math.floor(n / 10)
+            }
+            return sum;
+        }
+        var n = parseInt(prompt('nhap so nguyen duong: '))
+        if (n <= 0) {
+            document.write(tongChuSo(n));
+        } else {
+            document.write('Tong la: ' + tongChuSo(n))
+        }
+    </script>
+</body>
+</html>

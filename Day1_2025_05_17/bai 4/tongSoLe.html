@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tongSoLe(n) {
+            var sum = 0;
+            for(var i = 1;i<n;i+=2) {
+                sum +=i;
+            }
+            return sum;
+        }
+        var n = parseInt(prompt('Nhập số n: '))
+        document.write('Tổng các số lẻ nhỏ hơn n là: ' + tongSoLe(n))
+    </script>
+</body>
+</html>

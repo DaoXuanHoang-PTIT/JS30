@@ -8,7 +8,7 @@
 <body>
     <script>
         function tinhGiaithua(n) {
-            if (n < 0) return undefined;
+            if (n < 0) return ('vui long nhap so nguyen duong');
             var giaithua = 1;
             for (var i=1;i<=n;i++) {
                 giaithua *= i;
@@ -17,7 +17,7 @@
 
             }
         var n = parseInt(prompt('Nhập số nguyên dương: '))
-        document.write(tinhGiaithua(n))
+        document.write('so co giai thua bang: '+ tinhGiaithua(n))
 
 
         

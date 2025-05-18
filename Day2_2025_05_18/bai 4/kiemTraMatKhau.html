@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function kiemTramatkhau(matkhau) {
+            if (matkhau.length < 8) return ('Mat khau can it nhat 8 ki tu');
+            else if (!/[A-Z]/.test(matkhau)) return ('Mat khau can it nhat 1 chu cai in hoa');
+            else if (!/[a-z]/.test(matkhau)) return ('Mat khau can it nhat 1 chu cai thuong');
+            else if (!/\d/.test(matkhau)) return ('Mat khau can it nhat 1 chu so');
+            else return ('Mat khau manh qua');
+        }
+        var matkhau = prompt('Tao mat khau: ');
+        document.write(kiemTramatkhau(matkhau));
+        
+    </script>
+</body>
+</html>

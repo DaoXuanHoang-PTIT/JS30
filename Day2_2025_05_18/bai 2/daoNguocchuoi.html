@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daoNguocChuoi(str) {
+            var chuoiDaonguoc = '';
+            for ( var i = str.length -1; i >= 0; i--) {
+                chuoiDaonguoc += str[i];
+            }
+            return chuoiDaonguoc;
+        }
+        var str = prompt('nhap 1 chuoi bat ki: ')
+        document.write(daoNguocChuoi(str));
+    </script>
+</body>
+</html>

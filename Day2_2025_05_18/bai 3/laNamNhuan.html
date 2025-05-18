@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function laNamNhuan(nam) {
+            if (nam % 4==0 && nam % 100 != 0) return ('La nam nhuan');
+            else if (nam%400==0) return ('La nam nhuan');
+            else if (nam <= 0 ) return ('Vui long nhap lai...')
+            else return ('Khong la nam nhuan');
+            
+        }
+        var nam = parseInt(prompt('nhap nam can kiem tra: '));
+        document.write(laNamNhuan(nam));
+    </script>
+</body>
+</html>

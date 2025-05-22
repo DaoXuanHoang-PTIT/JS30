@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Bàn - UDUfoods</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .reservation-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .reservation-form h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Để padding không làm tăng kích thước tổng thể */
+        }
+        .form-group textarea {
+            resize: vertical; /* Cho phép thay đổi chiều cao textarea */
+            min-height: 100px;
+        }
+        .form-group button {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">UDUfoods</a>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="index.html#menu">Thực Đơn</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="datban.html">Đặt Bàn</a></li>
+                <li><a href="index.html#footer-content">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="reservation-form">
+            <h1>Đặt Bàn Trực Tuyến</h1>
+            <form action="#" method="POST"> 
+                <div class="form-group">
+                    <label for="name">Họ và Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Số Lượng Khách:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Ngày Đặt:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Giờ Đặt:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Ghi Chú Thêm:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Gửi Yêu Cầu Đặt Bàn</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content" class="container">
+            <p>&copy; 2025 Nhà Hàng UDUfoods. Mọi quyền được bảo lưu.</p>
+            <p>
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> 
+            </p>
+            <p>
+                Hotline: 0123456789
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

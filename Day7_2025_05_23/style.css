@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 30px;
+}
+.sudoku {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.fruit {
+    width: 100px;
+    height: 100px;
+    background-color: #FCF5D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+}
+.fruit img{
+    height: 80px;
+    width: 80px;
+}
+.fruit-empty {
+    background-color: #FCF5D9;
+}
+.answer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}

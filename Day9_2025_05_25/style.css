@@ -1,0 +1,29 @@
+body {
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      transition: background-image 0.5s ease-in-out;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    select, button {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 250px;
+      box-sizing: border-box;
+    }

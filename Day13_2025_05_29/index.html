@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Day13_2025_05_29/style.css">
+</head>
+<body>
+    <h2>Thêm sinh viên vào danh sách</h2>
+    <div class="container">
+        <div class="group">
+            <label for="msv">Mã sinh viên:</label>
+            <input type="text" id="msv" >
+        </div>
+        <div class="group">
+            <label for="hoten">Họ tên:</label>
+            <input type="text" id="hoten">
+        </div>
+        <div class="group">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+        <div class="group">
+            <label for="sdt">Số điện thoại:</label>
+            <input type="text" id="sdt">
+        </div>
+        <button class="btn" onclick="add()">Thêm</button>
+    </div>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>SĐT</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="/Day13_2025_05_29/script.js"></script>
+</body>
+</html>

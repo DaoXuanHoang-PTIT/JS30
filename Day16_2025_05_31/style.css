@@ -1,0 +1,7 @@
+body { font-family: Arial; padding: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+th { background: #f4f4f4; }
+button { padding: 5px 10px; margin: 2px; }
+.btn-edit { background: orange; border: none; color: white; }
+.btn-delete { background: crimson; border: none; color: white; }

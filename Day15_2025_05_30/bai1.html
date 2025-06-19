@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Student {
+  constructor(id, name, email, age) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.age = age;
+  }
+
+  displayInfo() {
+    console.log(`Student #${this.id}
+  • Name : ${this.name}
+  • Email: ${this.email}
+  • Age  : ${this.age}`);
+  }
+}
+
+const st1 = new Student(1, 'Nguyễn Văn A', 'a@example.com', 20);
+const st2 = new Student(2, 'Trần Thị B',  'b@example.com', 21);
+
+st1.displayInfo();
+st2.displayInfo();
+  </script>
+</body>
+</html>

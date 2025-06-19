@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Product {
+  constructor(id, name, price, quantity) {
+    this.id = id;
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+  }
+}
+
+/* ---- Mảng lưu trữ sản phẩm ---- */
+const products = [
+  new Product(101, 'Laptop',       18_000_000, 5),
+  new Product(102, 'Smartphone',    9_500_000, 8),
+  new Product(103, 'Headphones',      600_000, 30),
+];
+
+/* ---- Các hàm tiện ích ---- */
+function addProduct(product) {
+  products.push(product);
+}
+
+function getTotalInventoryValue() {
+  return products.reduce(
+    (total, p) => total + p.price * p.quantity,
+    0
+  );
+}
+
+function findMostExpensive() {
+  return products.reduce(
+    (max, p) => (p.price > max.price ? p : max),
+    products[0]
+  );
+}
+
+console.log('\n=== Danh sách sản phẩm ban đầu ===');
+products.forEach(p =>
+  console.log(`${p.id} - ${p.name}: ${p.price.toLocaleString()} đ × ${p.quantity}`)
+);
+
+// Thêm sản phẩm mới
+addProduct(new Product(104, 'Tablet', 6_000_000, 12));
+
+console.log('\n=== Đã thêm sản phẩm mới ===');
+products.forEach(p =>
+  console.log(`${p.id} - ${p.name}: ${p.price.toLocaleString()} đ × ${p.quantity}`)
+);
+
+// Tổng giá trị tồn kho
+console.log(
+  `\nTổng giá trị hàng tồn kho: ${getTotalInventoryValue().toLocaleString()} đ`
+);
+
+// Sản phẩm có giá cao nhất
+const expensive = findMostExpensive();
+console.log(
+  `\nSản phẩm đắt nhất: ${expensive.name} – ${expensive.price.toLocaleString()} đ`
+);
+    </script>
+</body>
+</html>

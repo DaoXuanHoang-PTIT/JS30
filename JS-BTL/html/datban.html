@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Bàn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/JS-BTL/css/datban.css">
+</head>
+<body class="bg">
+    <header>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Logo">
+            <b href="/JS-BTL/html/index.html"><strong>NoName</strong></b>
+        </div>
+    <nav>
+      <a href="/JS-BTL/html/index.html">Trang Chủ</a>
+      <a href="/JS-BTL/html/datban.html">Đặt bàn</a>
+      <a href="/JS-BTL/html/gioithieu.html">Giới Thiệu</a>
+      <a href="#">Liên Hệ</a>
+    </nav>
+    <button class="btn-menu">Thực Đơn</button>
+    </header>
+
+    <main >
+        <section class="reservation-form">
+            <h1>Đặt Bàn Trực Tuyến</h1>
+            <form action="#" method="POST"> 
+                <div class="form-group">
+                    <label for="name">Họ và Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Số Lượng Khách:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Ngày Đặt:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Giờ Đặt:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Ghi Chú Thêm:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Gửi Yêu Cầu Đặt Bàn</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="/JS-BTL/js/datban.js"></script>
+    <footer>
+        <div id="footer-content" class="container">
+            <h2 style="color: #e67e22;">Liên Hệ</h2>
+            <p>&copy; 2025 Nhà Hàng UDUfoods. Mọi quyền được bảo lưu.</p>
+            <p>
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> 
+            </p>
+            <p>
+                Hotline: 0936755385
+            </p>
+        </div>
+    </footer>
+</body>
+</html

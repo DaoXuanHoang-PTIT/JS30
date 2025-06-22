@@ -160,9 +160,14 @@ ul li {
     align-items: center;
     color: white;
 }
+.list a{
+    color: white;
+    text-decoration: none;
+}
 .list img {
     margin-right: 5%;
     padding: 1%;
     border-radius: 100%;
     border: 1px solid black;
 }
+

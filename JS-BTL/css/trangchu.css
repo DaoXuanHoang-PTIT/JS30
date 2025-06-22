@@ -96,6 +96,10 @@ nav a:hover {
   font-size: 18px;
   animation: zoomIn 1.2s ease-in-out;
 }
+.hero .btn:hover {
+  opacity: 0.8;
+  color: #007b5f;
+}
 
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-30px); }
@@ -260,8 +264,8 @@ section {
   height: auto;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  color: black;
+.swiper-button-next, .swiper-button-prev{
+  color: white;
 }
 
 /* Món ăn */

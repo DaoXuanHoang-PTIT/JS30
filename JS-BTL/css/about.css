@@ -39,7 +39,10 @@ header {
       display: flex;
       align-items: center;
       gap: 10px;
-    }
+}
+.logo a {
+  color: #1a1a1a;
+}
 
 .logo img {
       width: 60px;

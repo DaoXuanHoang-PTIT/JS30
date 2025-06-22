@@ -50,6 +50,7 @@ header {
 }
 .logo a {
   color: #1a1a1a;
+  text-decoration: none;
 }
 
 .logo img {

@@ -36,6 +36,7 @@ header {
 }
 .logo a {
   color: #1a1a1a;
+  text-decoration: none;
 }
 
 nav a {
@@ -252,7 +253,7 @@ section {
 .menu-section h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #f9f9f9;
+  color: black;
 }
 
 /* Swiper chỉnh sửa */
@@ -325,6 +326,7 @@ section {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .menu-button:hover {

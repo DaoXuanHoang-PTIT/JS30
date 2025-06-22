@@ -1,5 +1,5 @@
 document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Gửi thành công!');
-            this.reset();
-        });
+    e.preventDefault();
+    alert('Đặt bàn thành công!');
+    this.reset();
+});

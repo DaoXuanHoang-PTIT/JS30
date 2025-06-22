@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhà Hàng chưa đặt tên</title>
+  <title>Trang chủ</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/JS-BTL/css/trangchu.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-<header>
-    <div class="logo">
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Logo">
-      <b href="/JS-BTL/html/index.html"><strong>NoName</strong></b>
-    </div>
-    <nav>
-      <a href="#">Trang Chủ</a>
-      <a href="/JS-BTL/html/datban.html">Đặt bàn</a>
-      <a href="/JS-BTL/html/gioithieu.html">Giới Thiệu</a>
-      <a href="#">Liên Hệ</a>
-    </nav>
-    <button class="btn-menu">Thực Đơn</button>
-</header>
+  <header>
+      <div class="logo">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Logo">
+        <a href="/JS-BTL/html/index.html"><strong>NoName</strong></a>
+      </div>
+      <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="/JS-BTL/html/order.html">Đặt bàn</a>
+        <a href="/JS-BTL/html/about.html">Giới Thiệu</a>
+        <a href="/JS-BTL/html/contact.html">Liên Hệ</a>
+      </nav>
+      <button class="btn-menu">Thực Đơn</button>
+  </header>
 
   <section class="hero">
     <h1>Nhà Hàng</h1>
@@ -54,10 +54,9 @@
       </div>
       <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Interior">
     </div>
-  </section>
-
-  <section class="faq">
-    <h2>Tin tức mới</h2>
+</section>
+<section class="faq">
+  <h2>Tin tức mới</h2>
     <div class="news-section">
       <div class="news-card">
         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Hương vị mới">
@@ -100,6 +99,110 @@
       </div>
     </div>
   </section>
+  <section class="menu-section">
+    <h2>Món mới ra lò</h2>
+
+    <!-- Swiper Container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Món 1 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon1.png"/>
+          <h3>Măng trúc xào bò</h3>
+          <p class="price">145,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 2 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon2.png"/>
+          <h3>Bò một nắng chấm muối</h3>
+          <p class="price">150,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 3 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon3.png"/>
+          <h3>Cải mèo luộc chấm trứng</h3>
+          <p class="price">65,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 4 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon4.png"/>
+          <h3>Combo thịt nướng kiểu Nga</h3>
+          <p class="price">285,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!--Món 5-->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon5.png"/>
+          <h3>Thạch đen Cao Bằng chiên</h3>
+          <p class="price">89,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 6 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon6.png"/>
+          <h3>Gỏi miến trộn thính thịt băm</h3>
+          <p class="price">75,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 7 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon7.png"/>
+          <h3>Heo một nắng kèm sốt me</h3>
+          <p class="price">168,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 8 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon8.png"/>
+          <h3>Cá chẽm sốt Pattya</h3>
+          <p class="price">239,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 9 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon9.png"/>
+          <h3>Cải mèo xào ba chỉ gác bếp</h3>
+          <p class="price">89,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 10 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon10.png"/>
+          <h3>Nộm khổ qua bò một nắng</h3>
+          <p class="price">109,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 11 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon11.png"/>
+          <h3>Gà đen nướng mắc khén</h3>
+          <p class="price">350,000</p>
+          <button>+ Đặt</button>
+        </div>
+        <!-- Món 12 -->
+        <div class="swiper-slide menu-item">
+          <img src="/JS-BTL/img/mon12.png"/>
+          <h3>Lẩu gà đen H'mong</h3>
+          <p class="price">450,000</p>
+          <button>+ Đặt</button>
+        </div>
+      </div>
+
+      <!-- Nút điều hướng -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Nút xem thực đơn -->
+    <div class="btn-container">
+      <a href="#" class="menu-button">XEM THỰC ĐƠN</a>
+    </div>
+  </section>
+  
+
   <section class="faq">
     <h2>Câu Hỏi Thường Gặp</h2>
     <div class="faq-item">
@@ -123,5 +226,17 @@
       <p>Bạn có thể đặt bàn trực tuyến hoặc gọi điện thoại trực tiếp.</p>
     </div>
   </section>
+  <footer>
+    <div id="footer-content" class="container">
+        <h2 style="color: #e67e22;">Liên Hệ</h2>
+        <p>&copy; 2025 Nhà Hàng UDUfoods. Mọi quyền được bảo lưu.</p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>
+            Hotline: 0123456789
+        </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/JS-BTL/js/index.js"></script>
 </body>
 </html>

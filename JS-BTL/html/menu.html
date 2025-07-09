@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/JS-BTL/css/menu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Logo">
+        <a href="/JS-BTL/html/index.html"><strong>Nhà hàng UDU</strong></a>
+      </div>
+      <nav>
+        <a href="/JS-BTL/html/index.html">Trang Chủ</a>
+        <a href="/JS-BTL/html/order.html">Đặt bàn</a>
+        <a href="/JS-BTL/html/about.html">Giới Thiệu</a>
+        <a href="/JS-BTL/html/contact.html">Liên Hệ</a>
+      </nav>
+      <button class="btn-menu">Thực Đơn</button>
+  </header>
+  <main class="menu-grid">
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon11.png">
+      <div class="info">
+        <h3>Gà đen nướng mắc khén</h3>
+        <p class="price">350,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon12.png">
+      <div class="info">
+        <h3>Lẩu gà đen H'mong</h3>
+        <p class="price">450,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon1.png">
+      <div class="info">
+        <h3>Măng trúc xào bò</h3>
+        <p class="price">145,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon2.png">
+      <div class="info">
+        <h3>Bò một nắng chấm muối</h3>
+        <p class="price">150,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>        
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon3.png">
+      <div class="info">
+        <h3>Cải mèo luộc chấm trứng</h3>
+        <p class="price">65,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon4.png">
+      <div class="info">
+        <h3>Combo thịt nướng kiểu Nga</h3>
+        <p class="price">285,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon5.png">
+      <div class="info">
+        <h3>Thạch đen Cao Bằng chiên</h3>
+        <p class="price">89,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon6.png">
+      <div class="info">
+        <h3>Gỏi miến trộn thính thịt băm</h3>
+        <p class="price">75,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon7.png">
+      <div class="info">
+        <h3>Heo một nắng kèm sốt me</h3>
+        <p class="price">168,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon8.png">
+      <div class="info">
+        <h3>Cá chẽm sốt Pattya</h3>
+        <p class="price">239,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon9.png">
+      <div class="info">
+        <h3>Cải mèo xào ba chỉ gác bếp</h3>
+        <p class="price">89,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="/JS-BTL/img/mon10.png">
+      <div class="info">
+        <h3>Nộm khổ qua bò một nắng</h3>
+        <p class="price">109,000</p>
+        <button>+ Đặt</button>
+      </div>
+    </div>                            
+  </main>
+   <!-- Khối tạm tính nổi -->
+  <div class="floating-cart" id="floatingCart" onclick="openCart()" style="display: none;">
+    <p><strong id="itemCount">0 MÓN TẠM TÍNH</strong></p>
+    <p><span id="itemTotal">0</span> đ</p>
+  </div>
+  <!-- Popup giỏ hàng -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>🧾 Tạm tính</h2>
+        <button class="close-btn" onclick="closeCart()">×</button>
+      </div>
+      <div id="cartItems"></div>
+      <div class="total-section">
+        <p>Tổng tiền: <strong id="totalPrice">0</strong> đ</p>
+        <button class="order-btn"><a href="/JS-BTL/html/order.html">ĐẶT BÀN VỚI THỰC ĐƠN NÀY</a></button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="footer-content" class="container">
+        <h2 style="color: #e67e22;">Liên Hệ</h2>
+        <p>&copy; 2025 Nhà Hàng UDU. Mọi quyền được bảo lưu.</p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>
+            Hotline: 0936755385
+        </p>
+    </div>  
+  <script src="/JS-BTL/js/menu.js"></script>
+</body>
+</html>
+
+</body>
+</html>

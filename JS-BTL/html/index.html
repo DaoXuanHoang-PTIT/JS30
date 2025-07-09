@@ -12,7 +12,7 @@
   <header>
       <div class="logo">
         <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Logo">
-        <a href="/JS-BTL/html/index.html"><strong>NoName</strong></a>
+        <a href="/JS-BTL/html/index.html"><strong>Nhà hàng UDU</strong></a>
       </div>
       <nav>
         <a href="/JS-BTL/html/index.html">Trang Chủ</a>
@@ -20,7 +20,7 @@
         <a href="/JS-BTL/html/about.html">Giới Thiệu</a>
         <a href="/JS-BTL/html/contact.html">Liên Hệ</a>
       </nav>
-      <button class="btn-menu">Thực Đơn</button>
+      <button class="btn-menu"><a href="/JS-BTL/html/menu.html">Thực Đơn</a></button>
   </header>
 
   <section class="hero">
@@ -52,7 +52,7 @@
         <p>Tại đây, mỗi món ăn là một tác phẩm nghệ thuật, được chế biến tỉ mỉ từ nguyên liệu tươi ngon nhất.</p>
         <p>Hãy đến và cảm nhận sự khác biệt!</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Interior">
+      <img src="/JS-BTL/img/faq2.jpg" alt="Interior">
     </div>
 </section>
   <section class="menu-section">
@@ -151,52 +151,50 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-
-    <!-- Nút xem thực đơn -->
     <div class="btn-container">
-      <a href="#" class="menu-button">XEM THỰC ĐƠN</a>
+      <a href="/JS-BTL/html/menu.html" class="menu-button">XEM THỰC ĐƠN</a>
     </div>
   </section>
 <section class="faq">
   <h2>Tin tức mới</h2>
     <div class="news-section">
       <div class="news-card">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Hương vị mới">
+        <img src="/JS-BTL/img/faq1.jpg" alt="Hương vị mới">
         <div class="news-content">
           <h3>Hương vị mới</h3>
           <div class="news-date">Thứ Năm, 19 Tháng Sáu, 2025</div>
           <p>Khám phá hương vị mới lạ tại nhà hàng của chúng tôi. Trải nghiệm ẩm thực đỉnh cao!</p>
-          <a href="#" class="btn-news">Xem</a>
+          <a href="https://dantri.com.vn/" class="btn-news">Xem</a>
         </div>
       </div>
 
       <div class="news-card">
-        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Đầu bếp tài ba">
+        <img src="/JS-BTL/img/faq2.jpg" alt="Đầu bếp tài ba">
         <div class="news-content">
           <h3>Đầu bếp tài ba</h3>
           <div class="news-date">Thứ Tư, 18 Tháng Sáu, 2025</div>
           <p>Đầu bếp hàng đầu của chúng tôi sẽ mang đến những món ăn tuyệt vời nhất.</p>
-          <a href="#" class="btn-news">Xem</a>
+          <a href="https://dantri.com.vn/" class="btn-news">Xem</a>
         </div>
       </div>
 
       <div class="news-card">
-        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2" alt="Không gian đẳng cấp">
+        <img src="/JS-BTL/img/faq3.jpg" alt="Không gian đẳng cấp">
         <div class="news-content">
           <h3>Không gian đẳng cấp</h3>
           <div class="news-date">Thứ Ba, 17 Tháng Sáu, 2025</div>
           <p>Nhà hàng chúng tôi tự hào giới thiệu không gian ẩm thực đẳng cấp.</p>
-          <a href="#" class="btn-news">Xem</a>
+          <a href="https://dantri.com.vn/" class="btn-news">Xem</a>
         </div>
       </div>
 
       <div class="news-card">
-        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2" alt="Thực đơn đa dạng">
+        <img src="/JS-BTL/img/faq4.jpg" alt="Thực đơn đa dạng">
         <div class="news-content">
           <h3>Thực đơn đa dạng</h3>
           <div class="news-date">Thứ Hai, 16 Tháng Sáu, 2025</div>
           <p>Thực đơn đa dạng với nhiều lựa chọn hấp dẫn cho mọi thực khách.</p>
-          <a href="#" class="btn-news">Xem</a>
+          <a href="https://dantri.com.vn/" class="btn-news">Xem</a>
         </div>
       </div>
     </div>
@@ -227,14 +225,35 @@
   <footer>
     <div id="footer-content" class="container">
         <h2 style="color: #e67e22;">Liên Hệ</h2>
-        <p>&copy; 2025 Nhà Hàng UDUfoods. Mọi quyền được bảo lưu.</p>
+        <p>&copy; 2025 Nhà Hàng UDU. Mọi quyền được bảo lưu.</p>
         <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
         <p>
-            Hotline: 0123456789
+            Hotline: 0936755385
         </p>
     </div>
   </footer>
+   <!-- Khối tạm tính nổi -->
+  <div class="floating-cart" id="floatingCart" onclick="openCart()" style="display: none;">
+    <p><strong id="itemCount">0 MÓN TẠM TÍNH</strong></p>
+    <p><span id="itemTotal">0</span> đ</p>
+  </div>
+  <!-- Popup giỏ hàng -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>🧾 Tạm tính</h2>
+        <button class="close-btn" onclick="closeCart()">×</button>
+      </div>
+      <div id="cartItems"></div>
+      <div class="total-section">
+        <p>Tổng tiền: <strong id="totalPrice">0</strong> đ</p>
+        <button class="order-btn"><a href="/JS-BTL/html/order.html">ĐẶT BÀN VỚI THỰC ĐƠN NÀY</a></button>
+      </div>
+    </div>
+  </div>
+  <script src="/JS-BTL/js/menu.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/JS-BTL/js/index.js"></script>
+  <script src="/JS-BTL/js/menu.js"></script>
 </body>
 </html>

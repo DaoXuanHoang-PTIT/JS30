@@ -40,7 +40,7 @@ function renderCart() {
         <button onclick="changeQty(${index}, -1)">−</button>
         <span style="margin: 0 10px;">${item.qty}</span>
         <button onclick="changeQty(${index}, 1)">+</button>
-        <span style="float:right;">${(item.price * item.qty).toLocaleString()} đ</span>
+        <span style="float:right;">${(item.price * item.qty).toLocaleString()} VNĐ</span>
       </div>`;
   });
 
@@ -93,3 +93,15 @@ window.addEventListener('DOMContentLoaded', () => {
   renderCart();
   updateFloatingCart();
 });
+document.querySelector('.order-btn').addEventListener('click', () => {
+  let text = "Thực đơn đã chọn:\n";
+  cart.forEach(item => {
+    text += `- ${item.name} x ${item.qty} = ${(item.price * item.qty).toLocaleString()} VNĐ\n`;
+  });
+  const total = cart.reduce((sum, item) => sum + item.qty * item.price, 0);
+  text += `Tổng tiền: ${total.toLocaleString()} VNĐ`;
+
+  localStorage.setItem('selectedMenu', text); // Ghi vào localStorage
+  window.location.href = "order.html"; // Chuyển sang trang đặt bàn
+});
+

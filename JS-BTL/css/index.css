@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+  background: url('/JS-BTL/img/bg.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;

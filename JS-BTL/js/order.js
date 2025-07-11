@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
     noteField.value = savedMenu;
   }
 });
-
 // Giữ lại đoạn xử lý form hiện tại
 document.querySelector('form').addEventListener('submit', function(e) {
   e.preventDefault();

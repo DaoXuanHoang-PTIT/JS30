@@ -3,3 +3,4 @@ document.querySelector('.form form').addEventListener('submit', function(e) {
     alert('Gửi thành công!');
     this.reset();
 });
+

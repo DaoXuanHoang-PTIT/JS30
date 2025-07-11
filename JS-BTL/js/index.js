@@ -9,5 +9,8 @@ const swiper = new Swiper('.swiper', {
         1024: { slidesPerView: 4 },
         768: { slidesPerView: 2 },
         480: { slidesPerView: 1 }
+    },
+    scrollbar: {
+    el: ".swiper-scrollbar",
     }
 });

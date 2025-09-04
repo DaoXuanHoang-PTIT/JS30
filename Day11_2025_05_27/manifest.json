@@ -6,7 +6,7 @@
     "permissions" : ["scripting"],
     "content_scripts":[
         {
-            "matches" : ["*://dantri.com.vn/*"],
+            "matches" : ["*://slink.ptit.edu.vn//*"],
             "js" : ["content.js"],
             "run_at" : "document_idle"
         }
